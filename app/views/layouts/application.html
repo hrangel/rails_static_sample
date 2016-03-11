@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ruby on Rails Tutorial Sample App | <%= yield(:title) %></title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  
+  <!--[if It IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+  <header class="navbar navbar-fixed-top navbar-inverse">
+    <div class="navbar-inner">
+      <div class="container">
+        <a id="logo" href="/">sample app</a>
+        <nav>
+          <ul class="nav pull-right">
+            <li><a href="/">Item 1</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  <header>
+
+	<div class="container">
+		<%= yield %>
+		
+    <footer class="footer">
+      <small>
+        <a href="http://railstutorial.jp/">Rails Tutorial</a>
+        by Michael Hattl
+      </small>
+      <nav>
+        <ul>
+          <li><a href="http://news.railstutorial.jp/">News</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+	</div>
+</body>
+</html>

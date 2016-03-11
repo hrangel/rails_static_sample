@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '2.2.4'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.4'
+gem 'rails', '4.2.5'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'sprockets', '2.11.0'
 # Use sqlite3 as the database for Active Record
@@ -42,6 +42,7 @@ end
 group :production do
    gem 'pg', '0.15.1'
    gem 'rails_12factor', '0.0.2'
+   gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby, :x64_mingw]
 end 
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
